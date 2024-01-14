@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 400px;
+    height: 100%;
+    background:  #34495e;
+    border-radius: 10px;
+}
+
+.calculator--container{
+    width: 100%;
+    padding: 20px;
+}
+
+.display{
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    background: #fff;
+    border: 1px solid #000;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.buttons{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "AC AC DEL DIV"
+    "7 8 9 MUL"
+    "6 5 4 RES"
+    "3 2 1 SUM"
+    "0 00 PON IQU";
+    gap: 10px 15px;
+}
+
+.btn:nth-child(1){
+    grid-area: AC;
+}
+
+.btn:nth-child(2){
+    grid-area: DEL;
+}
+
+.btn:nth-child(3){
+    grid-area: DIV;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+}
+
+.btn-operator{
+    font-size: 1.3rem;
+    background: #f39c12;
+    color: #fff;
+}
